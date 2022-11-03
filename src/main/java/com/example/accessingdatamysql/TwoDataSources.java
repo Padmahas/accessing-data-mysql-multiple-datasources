@@ -66,7 +66,7 @@ public class TwoDataSources {
 		return secondDataSourceProperties.initializeDataSourceBuilder().type(HikariDataSource.class).build();
 	}
 
-	@Bean
+	@Bean(name="entityManagerFactory")
 	public LocalContainerEntityManagerFactoryBean secondEntityManagerFactory(DataSource secondDataSource,
 			DataSourceProperties secondDataSourceProps) {
 		HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
