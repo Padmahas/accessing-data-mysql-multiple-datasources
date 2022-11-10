@@ -8,8 +8,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity // This tells Hibernate to make a table out of this class
+@Table(name="table_c")
 public class Table_C {
   @Id
   @GeneratedValue(strategy=GenerationType.AUTO)
