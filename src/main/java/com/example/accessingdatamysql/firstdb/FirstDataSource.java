@@ -3,7 +3,6 @@
  */
 package com.example.accessingdatamysql.firstdb;
 
-import com.example.accessingdatamysql.Table_AOld;
 /**
  * @author padmahasa
  *
